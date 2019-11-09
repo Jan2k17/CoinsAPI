@@ -1,0 +1,7 @@
+main: de.jan2k17.coins.main.Main
+name: CoinsAPI
+version: 2.0.0
+api-version: 1.14
+author: Jan2k17
+commands:
+  coins:

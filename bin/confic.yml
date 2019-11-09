@@ -1,0 +1,22 @@
+# DEUTSCH / GERMAN
+# MySQL Einstellung für CoinsAPI
+# Diese CoinsAPI wurde von Jan2k17 Programmiert
+
+# Unterstütze Sprachen:
+# de - Deutsch
+# en - Englisch
+
+# ENGLISCH / ENGLISH
+# MySQL-Settings for CoinsAPI
+# This CoinsAPI has been created by Jan2k17
+
+# Supported language:
+# de - German
+# en - English
+
+# MYSQL Daten
+  Host: 'localhost'
+  Database: 'coins'
+  Username: 'root'
+  Password: 'password'
+  Language: 'de'
