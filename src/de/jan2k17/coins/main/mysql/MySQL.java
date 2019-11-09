@@ -12,8 +12,14 @@ public class MySQL {
   public static void connect() {
     if (!isConnected()) {
       try {
-        con = DriverManager.getConnection("jdbc:mysql://" + ConfigManager.host + ":3306/" + ConfigManager.database + "?autoReconnect=true", ConfigManager.username, ConfigManager.password);
-        System.out.println("MySQL Verbindung aufgebaut!");
+        con = DriverManager.getConnection("jdbc:mysql://" + ConfigManager.host + ":" + ConfigManager.port + "/" + ConfigManager.database + "?autoReconnect=true", ConfigManager.username, ConfigManager.password);
+        
+        if(ConfigManager.sprache == "de") {
+        	System.out.println("MySQL Verbindung aufgebaut!");
+        } else if(ConfigManager.sprache == "en") {
+        	System.out.println("MySQL connected!");
+        }
+      
       } catch (SQLException e) {
         e.printStackTrace();
       } 
@@ -24,7 +30,11 @@ public class MySQL {
     if (isConnected()) {
       try {
         con.close();
+        if(ConfigManager.sprache == "de") {
         System.out.println("MySQL Verbindung getrennt!");
+        } else if(ConfigManager.sprache == "en") {
+        	System.out.println("MySQL disconnected!");
+        }
       } catch (SQLException e) {
         e.printStackTrace();
       } 

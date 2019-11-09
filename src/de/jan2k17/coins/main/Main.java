@@ -38,6 +38,7 @@ public class Main extends JavaPlugin{
 	public void loadConfig() {
 		
 		ConfigManager.host = getConfig().getString("Host");
+		ConfigManager.port = getConfig().getString("Port");
 	    ConfigManager.database = getConfig().getString("Database");
 	    ConfigManager.username = getConfig().getString("Username");
 	    ConfigManager.password = getConfig().getString("Password");
