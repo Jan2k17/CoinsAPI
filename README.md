@@ -19,16 +19,19 @@ Zum anzeigen der Coins
     /coins add <Player> <Anzahl>
     
 Gibt den Spieler Coins.
+
 Permission: jan2k17.coins.admin
 
     /coins set <Player> <Anzahl>
 
 Setzt die Coins eines Spielers.
+
 Permission: jan2k17.coins.admin
 
     /coins remove <Player> <Anzahl>
 
 Verringert die Coins des Spielers um den angegebenen Wert.
+
 Permission: jan2k17.coins.admin
 
 # Für Entwickler
@@ -69,16 +72,19 @@ Let you show the coins
     /coins add <Player> <Anzahl>
     
 Let you show the coins
+
 Permission: jan2k17.coins.admin
 
     /coins set <Player> <Anzahl>
 
 Add Coins to the player.
+
 Permission: jan2k17.coins.admin
 
     /coins remove <Player> <Anzahl>
 
 Sets the Coins of the player to the value.
+
 Permission: jan2k17.coins.admin
 
 # for developer
